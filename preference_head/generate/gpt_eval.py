@@ -25,9 +25,8 @@ MODEL_NAME   = "gpt-4o-mini"          # 필요 시 다른 ChatGPT 모델로 변�
 TEMPERATURE  = 0
 MAX_TOKENS   = 4
 OUT_PATH     = "pairwise.jsonl"   # ★ 응답 저장 파일
-SLEEP_SEC    = 0.5                     # API 호출 간 최소 간격
+SLEEP_SEC    = 0.15                     # API 호출 간 최소 간격
 openai.api_key = os.environ.get("OPENAI_API_KEY")
-
 # ────────────── 보조 함수 ──────────────
 def build_pair_prompt(instruction: str, label_a: str, label_b: str) -> str:
     """
@@ -152,16 +151,19 @@ def chat_once(I: str, A: str, B: str) -> str:
 
 # ────────────── 메인 루프 ──────────────
 def main(A: str, B: str) -> None:
-    with open("merged_outputs.json", "r", encoding="utf-8") as f:
+    with open("chatbot_arena_llama_sample1.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    OUT_PATH = Path(f"{A}_{B}_pairwise.jsonl")
+    with open("chatbot_arena_llama_sample2.json", "r", encoding="utf-8") as f:
+        data_b = json.load(f)
+    OUT_PATH = Path(f"Asample1_vs_Bsample2"+"_pairwise.jsonl")
 
     done_idx = load_done_indices(OUT_PATH)
 
-    for item in data:
-        idx = item["idx"]
-        label_a = item[A]
-        label_b = item[B]
+    i = 0
+    for item, item_b in zip(data, data_b):
+        idx = i
+        label_a = item["output"]
+        label_b = item_b["output"]
         instruction = item["instruction"]
         
         if idx in done_idx:
@@ -171,15 +173,17 @@ def main(A: str, B: str) -> None:
         chat_reply["idx"] = idx
         append_record(OUT_PATH, chat_reply)
         time.sleep(SLEEP_SEC)  # API 호출 간 최소 텀 확보
+        i += 1
 
 if __name__ == "__main__":
     
-    L1 = "1Llama31-8B_output"
-    L2 = "2Llama31-8B_output"
-    g = "chatgpt_output"
+    L1 = "15"
+    L2 = "20"
+    g = "results"
     try:
         #main(g, L1)
         #main(g, L2)
-        main(L1, L2)
+        #main(L1, L2)
+        main(L1, L1)
     except KeyboardInterrupt:
         print("\n[INFO] 중단됨. 다음 실행 시 이어서 처리됩니다.", file=sys.stderr)
