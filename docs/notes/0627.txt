@@ -1,0 +1,14 @@
+distill된 작은 모델에서 alignment faking이 있는지 추가로
+	llama도 확인할 수 있으면 해보기
+지금은 너무 큰 모델이라 inference, 학습 등이 힘듬
+
+1. distill / quantization (https://www.kdnuggets.com/run-the-full-deepseek-r1-0528-model-locally)
+	최대한 local에서 학습이 가능하도록
+	실험실 환경 : a100 / h100 (80gb)
+	
+2. https://www.kdnuggets.com/run-the-full-deepseek-r1-0528-model-locally 이 방법론으로 alignment faking 없애보자?
+	
+3. test time scaling 이 가능한지? (정해진 input에 무조건 발생하는지)
+
+4. representaion engeneering / llm stiering(interesting papers)
+
