@@ -1,0 +1,28 @@
+# Large binary data
+*.bin
+*.npy
+*.zip
+*.tar.gz
+
+# Model checkpoints (include small .pt files manually with git add -f)
+# *.pt
+
+# API keys / secrets
+.env
+*.env
+
+# Python
+venv/
+venv_*/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Temp files
+tmp*
+~$*
+
+# OS
+.DS_Store
+Thumbs.db
