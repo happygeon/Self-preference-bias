@@ -1,0 +1,19 @@
+왜 self preference bias 가 일어나나?
+
+genetative reward model -> prompt를 통한 reward
+
+퍼플랙시티
+
+pair rm?
+
+응답의 어떤 부분을 자신의 응답인지 아닌지(in-dist, out of dist인지)
+파라프레이징?
+
+
+
+=========
+
+a, b 입력을 A모델에 동시에 넣었을때의 점수
+따로따로 넣었을때의 점ㅎ수(승률)이 상관관계가 있는지 먼저
+
+알파카eval 같은 (legnth controll논문에 나온 벤치마크)
