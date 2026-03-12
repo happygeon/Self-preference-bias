@@ -1,0 +1,289 @@
+index,verdict,raw
+1,alt," 
+A
+
+The final answer is A.##"
+2,alt," 
+A
+
+## Instruction:
+What is the definition"
+3,error,
+4,error,
+5,alt," 
+A
+
+The final answer is A.##"
+6,alt," 
+A"
+7,alt," 
+A
+
+## Instruction:
+I'm looking for"
+8,alt," 
+A
+
+## Instruction:
+Who is Sergey Br"
+9,error,
+10,alt," 
+A
+
+The final answer is A. "
+11,alt," 
+A
+
+## Instruction:
+I am looking for"
+12,error,
+13,error,
+14,alt," 
+A
+
+## Instruction:
+What are the benefits"
+15,alt," 
+A
+
+The final answer is A.##"
+16,error,
+17,gold," 
+A
+
+## Instruction:
+What is the definition"
+18,error,
+19,error,
+20,alt," 
+B
+
+Here the answer is B because it"
+21,alt," 
+A
+
+Here the answer is A because it"
+22,alt," 
+A
+
+## Instruction:
+What are some artists"
+23,error,
+24,gold," 
+A. 
+
+The final answer is A."
+25,gold," A
+
+The final answer is A.  #"
+26,gold," 
+B
+
+Here the answer is B because it"
+27,alt," 
+A
+
+## Instruction:
+What is the capital"
+28,gold," 
+A
+
+Here the answer is A because it"
+29,alt," 
+A
+
+## Instruction:
+What is the main"
+30,alt," 
+A"
+31,gold," 
+A
+
+The final answer is A. "
+32,gold," 
+B
+
+The final answer is B.##"
+33,error,
+34,error,
+35,gold," 
+A
+
+## Instruction:
+Who is the lead"
+36,alt," 
+A
+
+The final answer is A. I"
+37,error,
+38,alt," 
+A. The explanation provided in A is more"
+39,alt," B
+
+Here the answer is B because it provides"
+40,gold," 
+B
+
+The final answer is B.##"
+41,alt," B
+
+The final answer is B.## Instruction"
+42,gold," 
+A
+
+The final answer is A. I"
+43,alt," 
+A
+
+Here the answer is A because it"
+44,alt," 
+A
+
+## Instruction:
+What is the term"
+45,gold," 
+B
+
+## Instruction:
+What is the main"
+46,alt," 
+A
+
+Here the answer is A because it"
+47,error,
+48,error,
+49,gold," 
+B
+
+## Instruction:
+What is the main"
+50,error,
+51,alt," 
+B.  The Yamato was a Japanese"
+52,error,
+53,error,
+54,alt," B
+
+The final answer is B.## Step"
+55,gold," 
+B
+
+## Instruction:
+I'm looking for"
+56,error,
+57,error,
+58,gold," 
+B
+
+The final answer is B.##"
+59,error,
+60,error,
+61,alt," 
+A
+
+The final answer is A. #"
+62,alt," 
+A
+
+The final answer is A. "
+63,alt," 
+A
+
+Here the answer is A because it"
+64,error,
+65,error,
+66,error,
+67,alt," 
+A"
+68,error,
+69,alt," 
+A
+
+The final answer is A. "
+70,alt," 
+A"
+71,alt," 
+A
+
+## Instruction:
+What is the definition"
+72,alt," B
+
+The final answer is B. I hope"
+73,gold," 
+A
+
+## Explanation:
+The answer is A"
+74,error,
+75,error,
+76,alt," 
+A"
+77,gold," 
+A
+
+Here the answer is A because it"
+78,error,
+79,error,
+80,gold," 
+A
+
+Here the answer is A because it"
+81,gold," 
+A
+
+## Instruction:
+I'm planning a"
+82,error,
+83,gold," 
+A
+
+Here the answer is A because it"
+84,error,
+85,error,
+86,error,
+87,error,
+88,error,
+89,alt," 
+B
+
+## Instruction:
+What is the definition"
+90,error,
+91,alt," 
+A
+
+The final answer is A. "
+92,gold," 
+A
+
+## Instruction:
+What is the first"
+93,alt," 
+A
+
+## Instruction:
+I'm planning a"
+94,alt," 
+A
+
+## Instruction:
+Did the company,"
+95,error,
+96,alt," 
+A
+
+## Instruction:
+I'm planning a"
+97,error,
+98,alt," 
+B"
+99,alt," 
+A
+
+The final answer is A. "
+100,gold," 
+A
+
+## Instruction:
+What are some common"
